@@ -6,6 +6,12 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+html,
+body
+{
+    scroll-behavior: smooth;
+}
+
 .bg-color
 {
     background: #000000;  /* fallback for old browsers */
@@ -14,11 +20,24 @@
     font-size: 1.2rem;
 }
 
+.active-link
+{
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+}
+
 #navbar_logo
 {
-    background: #6a3093;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -28,6 +47,7 @@
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     margin-left: 20px;
     margin-right: 50px;
@@ -150,7 +170,8 @@
 {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
-    padding: 350px 0;
+    padding: 25% 0;
+    min-width: 100%;
 }
 
 .home_container
@@ -230,7 +251,8 @@
 .main
 {
     background-color: #101010;
-    padding: 15rem 0;
+    padding: 20rem 0;
+    height: 1300px;
 }
 
 .main_container
@@ -456,6 +478,241 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+}
+
+/*------------------------------------------- SKILLS SECTION ---------------------------------------*/
+.skills
+{
+    padding-top: 7rem;
+    height: 1300px;
+    background: #000000;
+    background: linear-gradient(to right, #161616, #000000);
+    color: #FFF;
+}
+
+.skills__container
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section__title
+{
+    text-align: center;
+    justify-content: center;
+    padding-top: 3rem;
+    font-size: 5rem;
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.skills_subtitle
+{
+    padding-bottom: 6rem;
+    font-size: 1.75rem;
+    text-align: center;
+    justify-content: center;
+    background: #B2FEFA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.skills_one
+{
+    margin-left: 0;
+}
+
+.skills_two
+{
+    margin-right: 0;
+}
+
+.container
+{
+    max-width: 1600px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid
+{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skills__header
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow
+{
+    font-size: 4rem;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.skills__icon
+{
+    margin-right: .75rem;
+}
+
+.skills__title
+{
+    font-size: 2rem;
+}
+
+.skills__subtitle
+{
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.skills__arrow
+{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__list
+{
+    padding-left: 2.7rem;
+}
+
+.skills__titles
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.skills__name
+{
+    font-size: 2rem;
+    font-weight: 2.5rem;
+}
+
+.skills__bar,
+.skills__percentage
+{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar
+{
+    background-color: #FFF;
+}
+
+.skills__percentage
+{
+    display: block;
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.skills__html
+{
+    width: 90%;
+}
+
+.skills__css
+{
+    width: 60%;
+}
+
+.skills__js
+{
+    width: 45%;
+}
+
+.skills__react
+{
+    width: 30%;
+}
+
+.skills__java
+{
+    width: 75%;
+}
+
+.skills__cs
+{
+    width: 65%;
+}
+
+.skills__php
+{
+    width: 20%;
+}
+
+.skills__python
+{
+    width: 45%;
+}
+
+.skills__close .skills__list
+{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list
+{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+
+.skills__open .skills__arrow
+{
+    transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 768px)
+{
+    .skills__container
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container
+    {
+        max-width: fit-content;
+    }
+
+    .skills
+{
+    padding-top: 6rem;
+    height: fit-content;
+}
 }
 /*------------------------------------------- CONTACT SECTION ---------------------------------------*/
 .main_contact

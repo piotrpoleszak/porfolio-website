@@ -1,72 +1,53 @@
-// Show active menu when scrolling
-const highlightMenu = () => {
-  const elem = document.querySelector('.highlight');
-  const homeMenu = document.querySelector('#home');
-  const aboutMenu = document.querySelector('#about');
-  const contactMenu = document.querySelector('#contact');
-  let scrollPos = window.scrollY;
+// ACCORDION SKILLS
+const skillsContent = document.getElementsByClassName('skills__content'),
+      skillsHeader = document.querySelectorAll('.skills__header')
 
-  // adds 'highlight' class to my menu items
-  if (window.innerWidth > 991 && scrollPos < 600) 
-  {
-    homeMenu.classList.add('highlight');
-    aboutMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
-    return;
-  }
+function toggleSkills()
+{
+    let itemClass = this.parentNode.className
 
-  else if (window.innerWidth > 991 && scrollPos < 1500) 
-  {
-    aboutMenu.classList.add('highlight');
-    homeMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
-    return;
-  } 
+    for(i = 0; i < skillsContent.length; i++)
+    {
+        skillsContent[i].className = 'skills__content skills__close'
+    }
 
-  else if (window.innerWidth > 991) 
-  {
-    contactMenu.classList.add('highlight');
-    homeMenu.classList.remove('highlight');
-    aboutMenu.classList.remove('highlight');
-    return;
-  }
+    if(itemClass === 'skills__content skills__close')
+    {
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
 
-  if ((elem && window.innerWIdth < 992) || elem) {
-    elem.classList.remove('highlight');
-  }
-};
+skillsHeader.forEach((el) => 
+{
+    el.addEventListener('click', toggleSkills)
+})
 
-window.addEventListener('scroll', highlightMenu);
-window.addEventListener('click', highlightMenu);
 
-//  Close mobile Menu when clicking on a menu item
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive()
+{
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>
+        {
+            const sectionHeight = current.offsetHeight
+            const sectionTop = current.offsetTop - 50;
+            sectionId = current.getAttribute('id')
+
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
+            {
+                document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            }else
+            {
+                document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            }
+        })
+}
+window.addEventListener('scroll', scrollActive)
+
+//===================== CLOSE MOBILE MENU WITH CLICKING ON MENU ITEM =====================\\
+$('.navbar-nav>li>a').on('click', function()
+{
+  $('.navbar-collapse').collapse('hide');
 });
-
-
-// smooth scroll 
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 300, function(){
-  
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });

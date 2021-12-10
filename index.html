@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Piotr Poleszak</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,50 +22,51 @@
 
 <body>
 
-<!-- ---------HEADER SECTION--------- -->
+    <!-- ---------HEADER SECTION--------- -->
 
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top">
 
-                <a href="#" id="navbar_logo">&lt;Poleszak/&gt;</a>
+            <a href="#" id="navbar_logo">&lt;Poleszak/&gt;</a>
 
-                <button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar">
 
-                    <span class="toggler-icon top-bar"></span>
-                    <span class="toggler-icon middle-bar"></span>
-                    <span class="toggler-icon bottom-bar"></span>
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
 
-                </button>
+            </button>
 
-                <div class="navbar-collapse collapse" id="navbar">
+            <div class="navbar-collapse collapse nav__menu" id="navbar">
 
-                    <ul class="navbar-nav nav list ms-auto">
-                        <li class="nav-link"><a href="#home-section" class="nav-link" id="home">Home</a></li>
-                        <li class="nav-link"><a href="#about-section" class="nav-link" id="about">About</a></li>
-                        <li class="nav-link"><a href="#contact-section" class="nav-link" id="contact">Contact</a></li>
-                        <li class="nav-link"><a href="#" class="nav-link">Poleszak</a></li>
+                <ul class="navbar-nav nav list ms-auto">
+                    <li class="nav-link"><a href="#home-section" class="nav-link" id="home">Home</a></li>
+                    <li class="nav-link"><a href="#about-section" class="nav-link" id="about">About</a></li>
+                    <li class="nav-link"><a href="#skills-section" class="nav-link" id="about">Skills</a></li>
+                    <li class="nav-link"><a href="#contact-section" class="nav-link" id="contact">Contact</a></li>
+                    <li class="nav-link"><a href="#" class="nav-link">Poleszak</a></li>
 
-                    </ul> 
+                </ul>
 
         </nav>
 
     </header>
 
-<!-- ---------HOME SECTION--------- -->
+    <!-- ---------HOME SECTION--------- -->
 
-    <div class="home" id="home-section">
+    <section class="home" id="home-section">
 
         <div class="home_container">
             <h1 class="home_heading">Let's Code <span>IT</span></h1>
             <p class="home_description">Unlimited Possibilities</p>
         </div>
 
-    </div>
+    </section>
 
-<!-- ---------ABOUT SECTION--------- -->
+    <!-- ---------ABOUT SECTION--------- -->
 
-    <div class="main" id="about-section">
+    <section class="main" id="about-section">
 
         <div class="main_container">
 
@@ -82,51 +87,185 @@
 
         </div>
 
-    </div>
-<!-- ---------CONTACT SECTION--------- -->
+    </section>
+    <!-- ---------SKILLS SECTION--------- -->
+    <section class="skills" id="skills-section">
+        <h2 class="section__title">Skills</h2>
+        <h3 class="skills_subtitle">My technical level</h3>
 
-    <div class="main_contact" id="contact-section">
+        <div class="skills__container container grid">
+            <div>
+                <!--==================== SKILLS ONE ====================-->
+                <div class="skills__content skills__open skills_one">
+
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Frontend developer</h1>
+                            <span class="skills__subtitle">More than 1 years</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__number">60%</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__number">45%</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <span class="skills__number">30%</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!--==================== SKILLS TWO ====================-->
+                <div class="skills__content skills__close skills_two">
+
+                    <div class="skills__header">
+                        <i class="uil uil-server-network skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Backend developer</h1>
+                            <span class="skills__subtitle">More than 2 years</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Java</h3>
+                                <span class="skills__number">75%</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__java"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">C#</h3>
+                                <span class="skills__number">65%</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__java"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">PHP</h3>
+                                <span class="skills__number">20%</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__php"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Python</h3>
+                                <span class="skills__number">45%</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------CONTACT SECTION--------- -->
+
+    <section class="main_contact" id="contact-section">
 
         <div class="mian-contact">
 
             <h1 class="contact-title">CONTACT</h1>
 
             <article class="contact-form">
-    
+
                 <form action="mail.php" method="post">
-                        
+
                     <div class="form-row">
-                        <label>Name:</label> 
+                        <label>Name:</label>
                         <input type="text" name="first_name" placeholder="John" required>
                     </div>
-    
+
                     <div class="form-row">
-                        <label>Email:</label> 
+                        <label>Email:</label>
                         <input type="text" name="email" placeholder="john@gmail.com" required>
                     </div>
-    
+
                     <div class="form-row">
-                        <label>Subject:</label> 
+                        <label>Subject:</label>
                         <input type="text" name="subject" placeholder="Subject" required>
                     </div>
-    
+
                     <div class="form-row textareaa">
-                        <textarea class="textarea" rows="10" name="message" cols="70" placeholder=" Your message..." required></textarea><br>
+                        <textarea class="textarea" rows="10" name="message" cols="70" placeholder=" Your message..."
+                            required></textarea><br>
                     </div>
-    
+
 
                     <input class="submit" type="submit" name="submit" value="Submit">
 
-    
+
                 </form>
-    
+
             </article>
-    
+
         </div>
 
-    </div>
+    </section>
 
-<!-- ---------FOOTER SECTION--------- -->
+    <!-- ---------FOOTER SECTION--------- -->
 
     <div class="footer_container">
 
@@ -137,19 +276,19 @@
                 <div class="footer_logo">
 
                     <a href="/" id="footer_logo">&lt;Poleszak/&gt;</a>
-                    
+
                 </div>
 
                 <div>
 
                     <p class="website_rights">© POLESZAK 2021. All rights reserved.</p>
-                
+
                 </div>
-                
+
                 <div class="social_icons">
 
-                        <a href="/" class="social_icon-link"><i class="fab fa-facebook"></i></a>
-                        <a href="/" class="social_icon-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social_icon-link"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social_icon-link"><i class="fab fa-linkedin"></i></a>
 
                 </div>
 
@@ -160,10 +299,13 @@
 
     </div>
 
-<!-- ---------SCRIPTS SECTION--------- -->
+    <!-- ---------SCRIPTS SECTION--------- -->
 
     <script src="js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
