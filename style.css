@@ -705,6 +705,7 @@ body
 
     .container
     {
+        min-height: 520px;
         max-width: fit-content;
     }
 
@@ -712,6 +713,44 @@ body
     {
         padding-top: 6rem;
         height: fit-content;
+    }
+
+    .skills__icon
+    {
+        font-size: 3rem;
+    }
+
+    .skills__name
+    {
+        font-size: 1.5rem;
+        font-weight: 2rem;
+    }
+
+    .skills__open .skills__list
+    {
+        margin-bottom: 2rem;
+    }
+
+    .skills__title
+    {
+        font-size: 1.5rem;
+    }
+
+    .skills__subtitle
+    {
+        font-size: 1rem;
+    }
+
+    .section__title
+    {
+        padding-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .skills_subtitle
+    {
+        padding-bottom: 4rem;
+        font-size: 1.3rem;
     }
 }
 /*------------------------------------------- CONTACT SECTION ---------------------------------------*/
