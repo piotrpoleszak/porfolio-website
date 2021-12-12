@@ -482,7 +482,7 @@ body
 
 /*------------------------------------------- SKILLS SECTION ---------------------------------------*/
 .skills
-{;
+{
     padding-top: 7rem;
     height: 1300px;
     background: #000000;
@@ -533,19 +533,19 @@ body
 
 .skills_one
 {
-    margin-left: 0;
+    margin-left: auto;
 }
 
 .skills_two
 {
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .container
 {
-    max-width: 1600px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid
@@ -709,10 +709,10 @@ body
     }
 
     .skills
-{
-    padding-top: 6rem;
-    height: fit-content;
-}
+    {
+        padding-top: 6rem;
+        height: fit-content;
+    }
 }
 /*------------------------------------------- CONTACT SECTION ---------------------------------------*/
 .main_contact
