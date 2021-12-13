@@ -228,29 +228,6 @@ body
     border-bottom: 4px solid rgb(122, 13, 231);
 }
 
-@media screen and (max-width: 768px)
-{
-    .home
-    {
-        padding: 150px 0;
-    }
-
-    .home_heading
-    {
-        font-size: 60px;
-    }
-
-    .home_description
-    {
-        font-size: 40px;
-    }
-
-    #navbar_logo
-    {
-        font-size: 1rem;
-    }
-}
-
 /*------------------------------------------- ABOUT SECTION ---------------------------------------*/
 
 .main
@@ -394,119 +371,6 @@ body
     font-size: 14rem;
 }
 
-
-@media screen and (max-width: 1100px)
-{
-    .home
-    {
-        height: 1200px;
-    }
-
-    .main
-    {
-        height: 1200px;
-        padding: 6rem 0;
-    }
-
-    .main_container
-    {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90%;
-    }
-
-    .main_img-container
-    {
-        display: flex;
-        justify-content: center;
-    }
-
-    .main_img-card
-    {
-        height: 300px;
-        width: 300px;
-    }
-
-    .main_content
-    {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
-    .main_content h1
-    {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-
-    .main_content h2
-    {
-        font-size: 3rem;
-    }
-
-    .main_content p
-    {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .home_heading
-    {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 480px)
-{
-    .main
-    {
-        padding: 3rem 0;
-    }
-
-    .main_img-card
-    {
-        margin-top: 4rem;
-    }
-
-    .main_img-card
-    {
-        height: 200px;
-        width: 200px;
-    }
-
-    .fa-users,
-    .fa-briefcase
-    {
-        font-size: 3rem
-    }
-
-    .main_content h1
-    {
-        font-size: 2rem;
-        margin-top: 2rem;
-    }
-
-    .main_content h2
-    {
-        font-size: 2rem;
-    }
-
-    .main_content p
-    {
-        margin-top: 1.5rem;
-    }
-
-    .main_btn
-    {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
-    }
-}
-
 /*==================== QUALIFICATION ====================*/
 .qualification
 {
@@ -617,35 +481,6 @@ body
 .qualification__button.qualification__active
 {
     color: #0575E6;
-}
-
-@media screen and (max-width: 480px)
-{
-    .qualification__icon
-    {
-        font-size: 1.5rem;
-    }
-
-    .qualification
-    {
-        padding: 6rem 0;
-    }
-
-    .qualification__button
-    {
-        font-size: 1rem;
-    }
-
-    .qualification__subtitle
-    {
-        font-size: 1rem;
-    }
-
-    .qualifiaction__title
-    {
-        font-size: 1.5rem;
-        font-weight: 200;
-    }
 }
 
 /*------------------------------------------- SKILLS SECTION ---------------------------------------*/
@@ -864,93 +699,6 @@ body
     transform: rotate(-180deg);
 }
 
-@media screen and (max-width: 768px)
-{
-    .skills__container
-    {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .container
-    {
-        min-height: 520px;
-        max-width: fit-content;
-    }
-
-    .skills
-    {
-        padding-top: 6rem;
-        height: fit-content;
-    }
-
-    .skills__icon
-    {
-        font-size: 3rem;
-    }
-
-    .skills__name
-    {
-        font-size: 1.5rem;
-        font-weight: 2rem;
-    }
-
-    .skills__open .skills__list
-    {
-        margin-bottom: 2rem;
-    }
-
-    .skills__title
-    {
-        font-size: 1.5rem;
-    }
-
-    .skills__subtitle
-    {
-        font-size: 1rem;
-    }
-
-    .section__title
-    {
-        padding-top: 2rem;
-        font-size: 3rem;
-    }
-
-    .skills_subtitle
-    {
-        padding-bottom: 4rem;
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 480px)
-{
-    .skills__icon
-    {
-        font-size: 2rem;
-    }
-
-    .skills__name
-    {
-        font-size: 1rem;
-        font-weight: 2rem;
-    }
-
-    .skills__arrow
-    {
-        font-size: 2.5rem;
-    }
-
-    .skills__title
-    {
-        font-size: 1.1rem;
-    }
-
-    .skills__subtitle
-    {
-        font-size: .8rem;
-    }
-}
-
 /*------------------------------------------- CONTACT SECTION ---------------------------------------*/
 .main_contact
 {
@@ -1063,45 +811,6 @@ textarea:focus
     text-align: center;
     display: flex;
 }
-
-@media screen and (max-width: 800px)
-{
-    input
-    {
-        width: 90%;
-    }
-
-    .textarea
-    {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 480px)
-{
-    .contact-title
-    {
-        padding-top: 5rem;
-        font-size: 2rem;
-    }
-
-    .submit
-    {
-        height: 50px;
-        width: 250px;
-        font-size: 1.5rem;
-    }
-
-    label
-    {
-        font-size: 1rem;
-    }
-
-    .main_contact
-    {
-        padding: 3rem 0;
-    }
-}
 /*------------------------------------------- FOOTER SECTION ---------------------------------------*/
 
 .footer_container
@@ -1160,6 +869,57 @@ textarea:focus
     color: #fff;
 }
 
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 480px)
+{
+    .main
+    {
+        max-height: fit-content;
+        padding: 3rem 0;
+    }
+
+    .main_img-card
+    {
+        margin-top: 4rem;
+    }
+
+    .main_img-card
+    {
+        height: 200px;
+        width: 200px;
+    }
+
+    .fa-users,
+    .fa-briefcase
+    {
+        font-size: 3rem
+    }
+
+    .main_content h1
+    {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .main_content h2
+    {
+        font-size: 2rem;
+    }
+
+    .main_content p
+    {
+        margin-top: 1.5rem;
+    }
+
+    .main_btn
+    {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
 @media screen and (max-width: 820px)
 {
     .social_icons
@@ -1180,5 +940,237 @@ textarea:focus
     .social_media-wrap
     {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    input
+    {
+        width: 90%;
+    }
+
+    .textarea
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .contact-title
+    {
+        padding-top: 5rem;
+        font-size: 2rem;
+    }
+
+    .submit
+    {
+        height: 50px;
+        width: 250px;
+        font-size: 1.5rem;
+    }
+
+    label
+    {
+        font-size: 1rem;
+    }
+
+    .main_contact
+    {
+        padding: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .skills__container
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container
+    {
+        min-height: 520px;
+        max-width: fit-content;
+    }
+
+    .skills
+    {
+        padding-top: 6rem;
+        height: fit-content;
+    }
+
+    .skills__icon
+    {
+        font-size: 3rem;
+    }
+
+    .skills__name
+    {
+        font-size: 1.5rem;
+        font-weight: 2rem;
+    }
+
+    .skills__open .skills__list
+    {
+        margin-bottom: 2rem;
+    }
+
+    .skills__title
+    {
+        font-size: 1.5rem;
+    }
+
+    .skills__subtitle
+    {
+        font-size: 1rem;
+    }
+
+    .section__title
+    {
+        padding-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .skills_subtitle
+    {
+        padding-bottom: 4rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .skills__icon
+    {
+        font-size: 2rem;
+    }
+
+    .skills__name
+    {
+        font-size: 1rem;
+        font-weight: 2rem;
+    }
+
+    .skills__arrow
+    {
+        font-size: 2.5rem;
+    }
+
+    .skills__title
+    {
+        font-size: 1.1rem;
+    }
+
+    .skills__subtitle
+    {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .qualification__icon
+    {
+        font-size: 1.5rem;
+    }
+
+    .qualification
+    {
+        padding: 6rem 0;
+    }
+
+    .qualification__button
+    {
+        font-size: 1rem;
+    }
+
+    .qualification__subtitle
+    {
+        font-size: 1rem;
+    }
+
+    .qualifiaction__title
+    {
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    .main_container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .main_img-container
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_img-card
+    {
+        height: 300px;
+        width: 300px;
+    }
+
+    .main_content
+    {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .main_content h1
+    {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main_content h2
+    {
+        font-size: 3rem;
+    }
+
+    .main_content p
+    {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .home_heading
+    {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .home
+    {
+        padding: 150px 0;
+    }
+
+    .home_heading
+    {
+        font-size: 60px;
+    }
+
+    .home_description
+    {
+        font-size: 40px;
+    }
+
+    #navbar_logo
+    {
+        font-size: 1rem;
     }
 }
