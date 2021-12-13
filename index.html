@@ -405,11 +405,32 @@
     </div>
 
     <!-- ---------SCRIPTS SECTION--------- -->
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
 
-    <script src="js/app.js"></script>
+    <!-- BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+
+    <script>
+        window.sr = ScrollReveal({ reset: true });
+
+        // Customizing a reveal set
+        sr.reveal('.home_heading', {origin: 'top', distance: '200px', duration:3000, delay: 400, reset: true});
+        sr.reveal('.home_description', {origin: 'bottom', distance: '200px', duration:3000, delay: 400, reset: true});
+        sr.reveal('.main_content', {origin: 'rigt', distance: '200px', delay: 400, duration: 3000, reset: true});
+        sr.reveal('.main_img-card', {origin: 'left', distance: '100px', delay: 400, duration: 3000, reset: true});
+        sr.reveal('.section__title, .qualification__sub', {distance: '60px', delay: 400, duration: 2500});
+        sr.reveal('.skills_subtitle', {distance: '50px', delay: 400, duration: 3000, reset: true});
+        sr.reveal('.skills__content', {opacity: .4, delay: 500, duration: 2500, reset: true});
+        sr.reveal('.contact-title', {origin: 'top', delay: 500, duration: 2500, reset: true});
+        sr.reveal('.contact-form', {distance: '25px', delay: 500, duration: 2500, reset: true});
+
+    </script>
 
 </body>
 

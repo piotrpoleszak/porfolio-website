@@ -53,8 +53,7 @@ $('.navbar-nav>li>a').on('click', function()
 });
 
 
-// QUALIFICATION TABS
-// QUALIFICATION TABS
+//==================== QUALIFICATION TABS =====================\\
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
 
@@ -77,4 +76,3 @@ tabs.forEach(tab =>
         tab.classList.add('qualification__active')
     })
 })
-
