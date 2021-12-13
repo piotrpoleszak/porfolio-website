@@ -244,6 +244,11 @@ body
     {
         font-size: 40px;
     }
+
+    #navbar_logo
+    {
+        font-size: 1rem;
+    }
 }
 
 /*------------------------------------------- ABOUT SECTION ---------------------------------------*/
@@ -389,10 +394,17 @@ body
     font-size: 14rem;
 }
 
+
 @media screen and (max-width: 1100px)
 {
+    .home
+    {
+        height: 1200px;
+    }
+
     .main
     {
+        height: 1200px;
         padding: 6rem 0;
     }
 
@@ -415,14 +427,14 @@ body
 
     .main_img-card
     {
-        height: 425px;
-        width: 425px;
+        height: 300px;
+        width: 300px;
     }
 
     .main_content
     {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 
     .main_content h1
@@ -439,28 +451,43 @@ body
     .main_content p
     {
         margin-top: 1rem;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .home_heading
+    {
+        font-size: 50px;
     }
 }
 
 @media screen and (max-width: 480px)
 {
+    .main
+    {
+        padding: 3rem 0;
+    }
+
     .main_img-card
     {
-        height: 250px;
-        width: 250px;
+        margin-top: 4rem;
+    }
+
+    .main_img-card
+    {
+        height: 200px;
+        width: 200px;
     }
 
     .fa-users,
     .fa-briefcase
     {
-        font-size: 4rem
+        font-size: 3rem
     }
 
     .main_content h1
     {
         font-size: 2rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     .main_content h2
@@ -470,7 +497,7 @@ body
 
     .main_content p
     {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     .main_btn
@@ -590,6 +617,35 @@ body
 .qualification__button.qualification__active
 {
     color: #0575E6;
+}
+
+@media screen and (max-width: 480px)
+{
+    .qualification__icon
+    {
+        font-size: 1.5rem;
+    }
+
+    .qualification
+    {
+        padding: 6rem 0;
+    }
+
+    .qualification__button
+    {
+        font-size: 1rem;
+    }
+
+    .qualification__subtitle
+    {
+        font-size: 1rem;
+    }
+
+    .qualifiaction__title
+    {
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
 }
 
 /*------------------------------------------- SKILLS SECTION ---------------------------------------*/
@@ -865,15 +921,45 @@ body
         font-size: 1.3rem;
     }
 }
+
+@media screen and (max-width: 480px)
+{
+    .skills__icon
+    {
+        font-size: 2rem;
+    }
+
+    .skills__name
+    {
+        font-size: 1rem;
+        font-weight: 2rem;
+    }
+
+    .skills__arrow
+    {
+        font-size: 2.5rem;
+    }
+
+    .skills__title
+    {
+        font-size: 1.1rem;
+    }
+
+    .skills__subtitle
+    {
+        font-size: .8rem;
+    }
+}
+
 /*------------------------------------------- CONTACT SECTION ---------------------------------------*/
 .main_contact
 {
     color: #fff;
     background: #000000;
     background: linear-gradient(to right, #161616, #0e0d0d);
-    padding: 7rem 0;
     text-align: center;
     align-items: center;
+    padding: 10rem 0;
 }
 
 .contact-title
@@ -989,10 +1075,31 @@ textarea:focus
     {
         width: 90%;
     }
+}
 
+@media screen and (max-width: 480px)
+{
     .contact-title
     {
-        font-size: 3rem;
+        padding-top: 5rem;
+        font-size: 2rem;
+    }
+
+    .submit
+    {
+        height: 50px;
+        width: 250px;
+        font-size: 1.5rem;
+    }
+
+    label
+    {
+        font-size: 1rem;
+    }
+
+    .main_contact
+    {
+        padding: 3rem 0;
     }
 }
 /*------------------------------------------- FOOTER SECTION ---------------------------------------*/
