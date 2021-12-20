@@ -869,6 +869,38 @@ textarea:focus
     color: #fff;
 }
 
+/*==================== SCROLL UP ====================*/
+.scrollup
+{
+    position: fixed;
+    right: 2rem;
+    bottom: -20%;
+    background-color: 	#202020;
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollup:hover
+{
+    background-color: #484848;
+}
+
+.scrollup__icon
+{
+    font-size: 2rem;
+    color: #FFF;
+}
+
+/* Show scroll */
+.show-scroll
+{
+    bottom: 5rem;
+}
+
+
 
 
 /* MEDIA QUERIES */

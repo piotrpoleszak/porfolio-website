@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +16,11 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 
 <body>
 
-    <!-- ---------HEADER SECTION--------- -->
+    <!--==================== HEADER SECTION ====================-->
 
     <header>
 
@@ -53,7 +51,7 @@
 
     </header>
 
-    <!-- ---------HOME SECTION--------- -->
+    <!--==================== HOME SECTION ====================-->
 
     <section class="home" id="home-section">
 
@@ -64,7 +62,7 @@
 
     </section>
 
-    <!-- ---------ABOUT SECTION--------- -->
+    <!--==================== ABOUT SECTION ====================-->
 
     <section class="main" id="about-section">
 
@@ -88,7 +86,7 @@
 
     </section>
 
-    <!-- ---------QUALIFICATIONS SECTION--------- -->
+    <!--==================== QUALIFICATIONS SECTION ====================-->
     <section class="qualification" id="qualification-section">
         <h2 class="section__title">Qualification</h2>
         <h3 class="qualification__sub">My personal journey</h3>
@@ -107,9 +105,9 @@
             </div>
 
             <div class="qualification__sections">
-                <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                <!--=============== QUALIFICATION CONTENT 1 ===============-->
                 <div class="qualification__content qualification__active" data-content id="education">
-                    <!--==================== QUALIFICATION 1 ====================-->
+                    <!--=============== QUALIFICATION 1 ===============-->
                     <div class="qualification__data">
                         <div>
                             <h3 class="qualification__title">Economy</h3>
@@ -127,7 +125,7 @@
                         </div>
                     </div>
 
-                    <!--==================== QUALIFICATION 2 ====================-->
+                    <!--=============== QUALIFICATION 2 ===============-->
                     <div class="qualification__data">
                         <div></div>
 
@@ -147,9 +145,9 @@
                     </div>
                 </div>
 
-                <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                <!--=============== QUALIFICATION CONTENT 2 ===============-->
                 <div class="qualification__content" data-content id="work">
-                    <!--==================== QUALIFICATION 1 ====================-->
+                    <!--=============== QUALIFICATION 1 ===============-->
                     <div class="qualification__data">
                         <div>
                             <h3 class="qualification__title">Seller</h3>
@@ -166,7 +164,7 @@
                         </div>
                     </div>
 
-                    <!--==================== QUALIFICATION 2 ====================-->
+                    <!--=============== QUALIFICATION 2 ===============-->
                     <div class="qualification__data">
                         <div></div>
 
@@ -189,7 +187,7 @@
         </div>
     </section>
 
-    <!-- ---------SKILLS SECTION--------- -->
+    <!--==================== SKILLS SECTION ====================-->
     <section class="skills" id="skills-section">
         <h2 class="section__title">Skills</h2>
         <h3 class="skills_subtitle">My technical level</h3>
@@ -259,7 +257,7 @@
             </div>
 
             <div>
-                <!--==================== SKILLS TWO ====================-->
+                <!--=============== SKILLS TWO ===============-->
                 <div class="skills__content skills__open skills_two">
 
                     <div class="skills__header">
@@ -322,8 +320,9 @@
             </div>
         </div>
     </section>
-    <!-- ---------CONTACT SECTION--------- -->
 
+
+    <!--==================== CONTACT SECTION ====================-->
     <section class="main_contact" id="contact-section">
 
         <div class="mian-contact">
@@ -366,8 +365,8 @@
 
     </section>
 
-    <!-- ---------FOOTER SECTION--------- -->
 
+    <!--==================== FOOTER SECTION ====================-->
     <div class="footer_container">
 
         <section class="social_media">
@@ -404,16 +403,25 @@
 
     </div>
 
-    <!-- ---------SCRIPTS SECTION--------- -->
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+
+    <!--==================== SCRIPTS SECTION ====================-->
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
 
-    <!-- BOOTSTRAP  -->
+
+    <!--==================== BOOTSTRAP  ====================-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <!-- SCROLL REVEAL -->
+
+    <!--==================== SCROLL REVEAL ====================-->
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 
     <script>
@@ -428,10 +436,7 @@
         sr.reveal('.skills_subtitle', {distance: '50px', delay: 400, duration: 3000, reset: true});
         sr.reveal('.skills__content', {opacity: .4, delay: 500, duration: 2500, reset: true});
         sr.reveal('.contact-title', {origin: 'top', delay: 500, duration: 2500, reset: true});
-        sr.reveal('.contact-form', {distance: '25px', delay: 500, duration: 2500, reset: true});
 
     </script>
-
 </body>
-
 </html>
