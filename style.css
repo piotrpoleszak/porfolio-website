@@ -905,7 +905,6 @@ textarea:focus
 {
     width: .60rem;
     background-color: #202020;
-    border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb
