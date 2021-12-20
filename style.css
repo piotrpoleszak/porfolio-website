@@ -875,7 +875,7 @@ textarea:focus
     position: fixed;
     right: 2rem;
     bottom: -20%;
-    background-color: 	#202020;
+    background-color: #202020;
     opacity: .8;
     padding: 0 .3rem;
     border-radius: .4rem;
@@ -900,10 +900,27 @@ textarea:focus
     bottom: 5rem;
 }
 
+/*==================== SCROLL BAR ====================*/
+::-webkit-scrollbar
+{
+    width: .60rem;
+    background-color: #202020;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #484848;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: #585858;
+}
 
 
-
-/* MEDIA QUERIES */
+/*========== MEDIA QUERIES ==========*/
 @media screen and (max-width: 480px)
 {
     .main
