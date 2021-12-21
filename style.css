@@ -279,7 +279,22 @@ body
     font-size: 4rem;
     background: #9D50BB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(90deg, rgba(89, 131, 252, 1) 0%, rgba(122, 47, 126, 1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.main_content h3
+{
+    font-size: 3rem;
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(282deg, rgba(89, 131, 252, 1) 44%, rgba(122, 47, 126, 1) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
