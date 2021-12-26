@@ -386,6 +386,48 @@ body
     font-size: 14rem;
 }
 
+.cv_button
+{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cv_button > a
+{
+    text-decoration: none;
+}
+
+.button
+{
+    display: inline-block;
+    background-color: #045de9;
+    color: #FFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.button:hover
+{
+    background-color: #009ffd;
+    color: #FFF;
+}
+
+.button__icon
+{
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+}
+
+.button--flex
+{
+    display: inline-flex;
+    align-items: center;
+}
+
+
 /*==================== QUALIFICATION ====================*/
 .qualification
 {
@@ -794,9 +836,9 @@ textarea:focus
 
 .submit
 {
-    background: #0099F7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #093f7e, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #093f7e, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0099F7;
+    background: -webkit-linear-gradient(to right, #093f7e, #0099F7);
+    background: linear-gradient(to right, #093f7e, #0099F7);
     color: #fff;
     border-radius: 6px;
     height: 60px;
@@ -808,6 +850,13 @@ textarea:focus
     padding: 5px;
     cursor: pointer;
     font-size: 2rem;
+}
+
+.submit:hover
+{
+    background: #045de9;
+    background: -webkit-linear-gradient(to right, #7f53ac, #045de9);
+    background: linear-gradient(to right, #7f53ac, #045de9);
 }
 
 .textarea
